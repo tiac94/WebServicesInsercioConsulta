@@ -202,67 +202,7 @@ public class Insercio extends AppCompatActivity {
         }
     };
 
-    /*private class Inserir extends AsyncTask<String, Void, String> {
-
-        @Override
-        protected String doInBackground(String... urls) {
-            try{
-                return downloadUrl(urls[0]);
-            } catch (IOException e){
-                return "URL invalida";
-
-            }
-        }
-        protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(), "Les dades s'han guardat correctament", Toast.LENGTH_SHORT).show();
-        }
-    }*/
-
-    /*private String downloadUrl(String myurl) throws IOException {
-        Log.i("URL", "" + myurl);
-        InputStream is = null;
-        int len = 500;
-
-
-        String contentAsString = null;
-        try {
-            URL url = new URL(myurl);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setReadTimeout(10000);
-            conn.setConnectTimeout(15000);
-            conn.setRequestMethod("GET");
-            conn.setDoInput(true);
-
-            conn.connect();
-            int response = conn.getResponseCode();
-            Log.d("resposta", "La resposta es: " + response);
-
-            is = conn.getInputStream();
-
-            //Convertim el InputStream en un String
-            contentAsString = readIt(is, len);
-            return contentAsString;
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (is != null) {
-                is.close();
-            }
-        }
-
-        return contentAsString;
-    }*/
-
-
-
-
-    /*private String readIt(InputStream stream, int len) throws IOException {
-        Reader reader = null;
-        reader = new InputStreamReader(stream, "UTF-8");
-        char [] buffer = new char[len];
-        reader.read(buffer);
-        return new String(buffer);
-    }*/
+    
 
 
 }
